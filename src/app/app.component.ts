@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app'; // this is class property
   name = 'Sourabh'; // I am adding here another property
+  isCorrect : boolean = true;
+  password : string = '123';
 
   displayMyName (){ // this is class method
 
