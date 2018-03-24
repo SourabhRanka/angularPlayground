@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'app'; // this is class property
+  name = 'Sourabh'; // I am adding here another property
+
+  displayMyName (){ // this is class method
+
+    alert(this.name); // will display my name
+
+  }
 }
