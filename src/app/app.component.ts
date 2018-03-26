@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { BookLibraryService } from "./book-library.service";
 
 @Component({
   selector: 'app-root',
@@ -6,14 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app'; // this is class property
-  name = 'Sourabh'; // I am adding here another property
-  isCorrect : boolean = true;
-  password : string = '123';
 
-  displayMyName (){ // this is class method
+  constructor(private myBookLibrary: BookLibraryService) {
+    this.books = this.myBookLibrary.getLibraryBooks();
+  }
 
-    alert(this.name); // will display my name
+  iAmPropertyOfAppComponent = "shyam";
+  books = [];
 
+  parentMethod($event) {
+    alert('parent Method Called');
   }
 }

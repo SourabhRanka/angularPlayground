@@ -1,30 +1,37 @@
 <!--this is template of my app-component or root component, everything goes here-->
 
-<p>app component starts</p>
-<!--we will learn Data-Bindings here-->
-<h1>Interpolation :</h1> <br>
-<div>
-    Name is coming from ts file using Interpolation : {{name}}<br>
-</div>
-<h1>Property Binding</h1> : <br>
+<p class='boundary'>app component starts</p>
 
-<button [disabled]='false'>ClickMe1</button>
-<button [disabled]='isCorrect'>ClickMe2</button>
-<div>
-    Above button's disabled property is bounded with the expression,expression may contain anything that is compiled by angular
-    engine
-    <br>
+<!--service example-->
+<div class='service'>
+    <h1>service example</h1>
+    <p *ngFor='let book of books'>
+        {{book | uppercase}}<br>
+    </p>
+
 </div>
 
-<h1>Event Binding</h1> : <br>
-<button (click)="displayMyName()">Click Me</button>
-<div>
-    Above button is binding the click event to the method of class
+
+<!--template reference example-->
+<div class='refVariable'>
+    <h1>template reference example</h1>
+    <app-child #child></app-child>
+    {{child.childCount}} I am in parent : <button (click)='child.iAmChildMethod()'>click Me</button>
+
 </div>
 
-<h1>Two Way Binding</h1> : <br> Password : <input type="text" [(ngModel)]='password'>
-<div>
-    Oh yes two way data binding is working - {{password}}
+<!--@Input example-->
+<div class='input'>
+    <h1>@Input example</h1>
+    <app-child-input [nameOfParent]='iAmPropertyOfAppComponent'> </app-child-input>
 </div>
 
-<p>app component ends</p>
+
+<!--@OutputExample-->
+<div class='output'>
+    <h1>@Output example</h1>
+    <app-child-output (change)='parentMethod($event)'></app-child-output>
+</div>
+
+
+<p class='boundary'>app component ends</p>

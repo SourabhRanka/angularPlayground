@@ -1,6 +1,26 @@
-p {
-
+p.boundary {
     background-color: yellow;
     color : red;
+}
 
+div{
+    border: solid 2px black;
+    padding : 2px;
+    margin : 2px;
+}
+
+.service {
+background-color: green;
+}
+
+.input {
+background-color: lightgray;
+}
+
+.output{
+background-color: lightcyan;
+}
+
+.refVariable{
+    background-color: royalblue;
 }
