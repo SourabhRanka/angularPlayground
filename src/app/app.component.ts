@@ -6,14 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app'; // this is class property
-  name = 'Sourabh'; // I am adding here another property
-  isCorrect : boolean = true;
-  password : string = '123';
+  checkSpecial(){
+    if(true === true){
+      return true;
+    }else{
+      return false;
+    }
+  }
 
-  displayMyName (){ // this is class method
+  classConfig = {
+    special : true,  // nameOFthe Class : boolean value
+    verySpecial : true
 
-    alert(this.name); // will display my name
+  }
+
+  styleConfig = {
+    color  : 'yellow',  // nameOFthe Class : boolean value
+    backgroundColor : 'green'
 
   }
 }
