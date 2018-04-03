@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HideDirective } from './hide.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HideDirective
   ],
   imports: [
     BrowserModule,FormsModule
