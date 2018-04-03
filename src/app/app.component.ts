@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  numbers = [4,5,6];
+  
   checkSpecial(){
     if(true === true){
       return true;
