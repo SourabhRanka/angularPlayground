@@ -6,7 +6,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RouterModule } from "@angular/router";
-import { ReversePipePipe } from './reverse-pipe.pipe';
+
+import { DefaultComponent } from './default/default.component';
+import { CapitalizePipe } from './capitalize.pipe';
 
 
 
@@ -15,7 +17,8 @@ import { ReversePipePipe } from './reverse-pipe.pipe';
     AppComponent,
     ContactsComponent,
     AboutusComponent,
-    ReversePipePipe
+    DefaultComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,FormsModule, AppRoutingModule

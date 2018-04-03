@@ -9,6 +9,8 @@ export class ContactsComponent implements OnInit {
 
   constructor() { }
 
+  x = 'sourabh';
+
   ngOnInit() {
   }
 
