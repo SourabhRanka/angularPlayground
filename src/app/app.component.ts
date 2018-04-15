@@ -25,5 +25,6 @@ export class AppComponent {
 
   setData(){
     this.dataservice.postData(this.item).subscribe(response => console.log(response));
+    this.data = {};
   }
 }
