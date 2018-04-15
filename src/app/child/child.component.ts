@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { OnChanges } from "@angular/core/src/metadata/lifecycle_hooks";
 
 @Component({
@@ -7,6 +7,7 @@ import { OnChanges } from "@angular/core/src/metadata/lifecycle_hooks";
   styleUrls: ["./child.component.css"]
 })
 export class ChildComponent implements OnInit,OnChanges {
+  @Input() secret ;
   constructor() {
     alert("constructor called");
   }
@@ -19,31 +20,31 @@ export class ChildComponent implements OnInit,OnChanges {
     // after every changes in component's proprties
     alert("ngOnChanges called");
   }
-  // ngDoCheck() {
-  //   // after every change detection run cycle
-  //   alert("ngDoCheck Called");
-  // }
-  // ngOnContentInit() {
-  //   // after content of the component has been initialized
-  //   alert("ngOnContentInit called");
-  // }
+  ngDoCheck() {
+    // after every change detection run cycle
+    alert("ngDoCheck Called");
+  }
+  ngOnContentInit() {
+    // after content of the component has been initialized
+    alert("ngOnContentInit called");
+  }
 
-  // ngAfterViewInit() {
-  //   // after view of the component has been intialized
-  //   alert("ngAfterViewInit called");
-  // }
+  ngAfterViewInit() {
+    // after view of the component has been intialized
+    alert("ngAfterViewInit called");
+  }
 
-  // ngAfterViewChecked() {
-  //   // after every time view is checked
-  //   alert("ngAfterViewChecked called");
-  // }
-  // ngAfterContentChecked() {
-  //   //after everytime content is checked
-  //   alert("ngAfterContentChecked called");
-  // }
+  ngAfterViewChecked() {
+    // after every time view is checked
+    alert("ngAfterViewChecked called");
+  }
+  ngAfterContentChecked() {
+    //after everytime content is checked
+    alert("ngAfterContentChecked called");
+  }
 
-  // ngOnDestroy() {
-  //   // before destroying every component
-  //   alert("ngOnDestroy called");
-  // }
+  ngOnDestroy() {
+    // before destroying every component
+    alert("ngOnDestroy called");
+  }
 }
