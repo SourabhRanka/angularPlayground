@@ -1,0 +1,17 @@
+.heading{
+    padding : 20px;
+    border : solid 1px black;
+    background-color: lightcyan;
+}
+
+.container{
+    padding : 100px;
+    border : solid 1px black;
+    background-color: yellowgreen;
+}
+
+.footer{
+    padding : 20px;
+    border : solid 1px black;
+    background-color: lightcyan;
+}

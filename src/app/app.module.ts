@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ContainerComponent } from './container/container.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContainerComponent
+    
   ],
   imports: [
     BrowserModule,FormsModule
