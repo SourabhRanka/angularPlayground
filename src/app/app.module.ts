@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 	import { FormsModule } from '@angular/forms';
 
 
-import { AppComponent } from './app.component';
+  import { AppComponent } from './app.component';
+  import { Feature2Module } from "./feature2/feature2.module";
+  import { Feature1Module } from "./feature1/feature1.module";
 
 
 @NgModule({
@@ -11,7 +13,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule,Feature1Module,Feature2Module
   ],
   providers: [],
   bootstrap: [AppComponent]
