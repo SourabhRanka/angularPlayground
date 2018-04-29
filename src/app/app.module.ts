@@ -6,9 +6,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RouterModule } from "@angular/router";
-
 import { DefaultComponent } from './default/default.component';
-import { CapitalizePipe } from './capitalize.pipe';
+
 
 
 
@@ -17,8 +16,8 @@ import { CapitalizePipe } from './capitalize.pipe';
     AppComponent,
     ContactsComponent,
     AboutusComponent,
-    DefaultComponent,
-    CapitalizePipe
+    DefaultComponent
+
   ],
   imports: [
     BrowserModule,FormsModule, AppRoutingModule

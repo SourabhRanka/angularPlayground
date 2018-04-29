@@ -7,9 +7,12 @@ import { DefaultComponent } from "./default/default.component";
 
 const routes: Routes = [
   // { path: '', redirectTo: '/contacts', pathMatch: 'full' }, 
-  { path: '', component: DefaultComponent, pathMatch: 'full' },
+  
   { path: 'contacts', component: ContactsComponent },
-  { path: 'aboutus', component: AboutusComponent }
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'feature2', loadChildren: 'app/feature2/feature2.module#Feature2Module'},
+  { path: 'feature1', loadChildren: 'app/feature1/feature1.module#Feature1Module'},
+  { path: '', component: DefaultComponent, pathMatch: 'full' }
 ];
 
 
