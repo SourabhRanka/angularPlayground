@@ -10,8 +10,14 @@ import { BananaComponent } from "./banana/banana.component";
 const routes: Routes = [
   // { path: '', redirectTo: '/contacts', pathMatch: 'full' }, 
   
-  { path: 'apple', component: AppleComponent },
-  { path: 'banana', component: BananaComponent }
+  { 
+    path: 'feature2', 
+    children :[
+        { path: 'x', component: AppleComponent },
+        { path: 'y', component: BananaComponent }
+    ]
+ }
+  
 ];
 
 

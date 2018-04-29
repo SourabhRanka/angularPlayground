@@ -9,10 +9,13 @@ import { GreenComponent } from "./green/green.component";
 
 const routes: Routes = [
   // { path: '', redirectTo: '/contacts', pathMatch: 'full' }, 
-  { path: '', component: RedComponent },
-  { path: 'red', component: RedComponent },
-  { path: 'green', component: GreenComponent }
-];
+  { 
+    path: 'feature1', 
+    children :[
+        { path: 'red', component: RedComponent },
+        { path: 'green', component: GreenComponent }
+    ]
+ }];
 
 
 @NgModule({
