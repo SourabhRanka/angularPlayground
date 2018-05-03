@@ -16,4 +16,8 @@ export class ContactsComponent implements OnInit {
 
   contactNumber = '';
 
+  getContacts(){
+    return 
+  }
+
 }

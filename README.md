@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # ROUTING, CUSTOM PIPES
+=======
+# HTTP_SERVICE
+>>>>>>> f1b856d7ca345c61c3f2bc6708bfbbdf45f6bb77
 
 # AngularPlayground
 
