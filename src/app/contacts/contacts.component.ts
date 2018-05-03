@@ -14,4 +14,6 @@ export class ContactsComponent implements OnInit {
   ngOnInit() {
   }
 
+  contactNumber = '';
+
 }

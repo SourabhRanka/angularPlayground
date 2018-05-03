@@ -9,6 +9,9 @@ import { RouterModule } from "@angular/router";
 
 import { DefaultComponent } from './default/default.component';
 import { CapitalizePipe } from './capitalize.pipe';
+import { Restrict } from './restrict.service';
+import {SubscriptionService} from './subscription.service'
+import { EmptyContact } from './empty-contact.service';
 
 
 
@@ -23,7 +26,7 @@ import { CapitalizePipe } from './capitalize.pipe';
   imports: [
     BrowserModule,FormsModule, AppRoutingModule
   ],
-  providers: [],
+  providers: [Restrict, SubscriptionService,EmptyContact],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SubscriptionService } from '../subscription.service';
 
 @Component({
   selector: 'app-default',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
-  constructor() { }
+  constructor(private subscriptionService : SubscriptionService) { }
 
   ngOnInit() {
+  }
+
+  subscribe(){
+    this.subscriptionService.makeSubscription();
   }
 
 }
