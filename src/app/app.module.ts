@@ -7,8 +7,6 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RouterModule } from "@angular/router";
 import { DefaultComponent } from './default/default.component';
-import { Feature1Module } from "./feature1/feature1.module";
-import { Feature2Module } from "./feature2/feature2.module";
 
 
 
@@ -22,7 +20,7 @@ import { Feature2Module } from "./feature2/feature2.module";
 
   ],
   imports: [
-    BrowserModule,FormsModule, AppRoutingModule,Feature1Module,Feature2Module
+    BrowserModule,FormsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
