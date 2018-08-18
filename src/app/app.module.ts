@@ -4,11 +4,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ParentComponent } from './parent/parent.component';
+import { C1Component } from './c1/c1.component';
+import { C2Component } from './c2/c2.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParentComponent,
+    C1Component,
+    C2Component
   ],
   imports: [
     BrowserModule,FormsModule
