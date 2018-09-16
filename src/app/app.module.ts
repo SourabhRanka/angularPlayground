@@ -9,6 +9,7 @@ import { RouterModule } from "@angular/router";
 import { DefaultComponent } from './default/default.component';
 import { Feature1Module } from "./feature1/feature1.module";
 import { Feature2Module } from "./feature2/feature2.module";
+import { ContactdetailComponent } from './contactdetail/contactdetail.component';
 
 
 
@@ -18,7 +19,8 @@ import { Feature2Module } from "./feature2/feature2.module";
     AppComponent,
     ContactsComponent,
     AboutusComponent,
-    DefaultComponent
+    DefaultComponent,
+    ContactdetailComponent
 
   ],
   imports: [
